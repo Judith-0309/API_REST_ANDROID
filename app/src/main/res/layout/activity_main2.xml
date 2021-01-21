@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:id="@+id/myDynamicLayout">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:text="@string/welcome_name"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/send"/>
+
+
+
+</LinearLayout>

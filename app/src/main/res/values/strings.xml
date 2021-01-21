@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectTransfert</string>
+    <string name="welcome_name">Transferez votre Argent en toute Securité</string>
+    <string name="points_mag">Points : 0</string>
+    <string name="btnname">PLUS</string>
+
+</resources>
