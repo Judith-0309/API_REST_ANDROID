@@ -7,22 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EnvoiActivity extends AppCompatActivity {
-//===================  DECLARATION DES VARIABLE =========================
-   private Button btnSuiv;
+public class EmetteurActivity extends AppCompatActivity {
+
+   //====================DECLARATION DES VARIABLE=======================
+   private Button btnSuivant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_envoi);
+        setContentView(R.layout.activity_emetteur);
+
+
+
 
 //===================  GESTION DES EVENEMENTS =========================
-        btnSuiv=findViewById(R.id.btnSuiv);
-        btnSuiv.setOnClickListener(new View.OnClickListener() {
+        btnSuivant=findViewById(R.id.btnSuivant);
+        btnSuivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(EnvoiActivity.this, EmetteurActivity.class);
+                Intent intent = new Intent(EmetteurActivity.this, RecepteurActivity.class);
                 startActivity(intent);
 
             }
@@ -30,6 +34,4 @@ public class EnvoiActivity extends AppCompatActivity {
 
 
     }
-
-
-}
+    }

@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectTransfert">
-        <activity android:name=".EnvoiActivity"></activity>
-        <activity android:name=".MainActivityS" />
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".RecepteurActivity" />
+        <activity android:name=".EnvoiActivity" />
+        <activity android:name=".EmetteurActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,17 +21,24 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="5dp"
-        android:text="ENVOI"
+        android:text="INFORMATION DU RECEPTEUR"
         android:textColor="#FF000000"
-        android:textSize="40sp"
+        android:textSize="20sp"
         android:typeface="serif" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:hint="Date"
-        android:inputType="datetime" />
+        android:hint="Nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Prenom"
+        android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -38,15 +46,20 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/white"
-        android:hint="Montant"
+        android:hint="CNI"
         android:inputType="number" />
 
-
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Telephone"
+        android:inputType="phone" />
 
 
 
     <Button
-        android:id="@+id/btnSuiv"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -55,6 +68,7 @@
         android:layout_marginTop="50dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
-        android:text="Suivant"
+        android:text="Submit"
         android:textColor="#FF000000" />
+
 </LinearLayout>
