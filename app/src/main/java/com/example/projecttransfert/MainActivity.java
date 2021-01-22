@@ -55,7 +55,7 @@ private LinearLayout myLayout;
 
             case R.id.envoi:
                 //Toast.makeText(this, "Envoi selected" , Toast.LENGTH_LONG).show();
-                Intent intent= new Intent(MainActivity.this,judithActivity.class);
+                Intent intent= new Intent(MainActivity.this,EnvoiActivity.class);
                 startActivity(intent);
 
                 return true;
