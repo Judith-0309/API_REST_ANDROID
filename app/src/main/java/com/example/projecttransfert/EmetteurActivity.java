@@ -46,7 +46,7 @@ public class EmetteurActivity extends AppCompatActivity {
         protected Emetteur[] doInBackground(Void... params) {
 
             try {
-                String apiUrl = "";
+                String apiUrl = "http://localhost:8080/api/emetteurs/";
                 RestTemplate restTemplate = new RestTemplate();
                 restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
                 Emetteur[ ] emetteurs = restTemplate.getForObject(apiUrl, Emetteur[].class);

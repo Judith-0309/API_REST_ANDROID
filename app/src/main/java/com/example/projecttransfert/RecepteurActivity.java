@@ -42,7 +42,7 @@ public class RecepteurActivity extends AppCompatActivity {
             protected Recepteur[] doInBackground(Void... params) {
 
                 try {
-                    String apiUrl = "";
+                    String apiUrl = "http://localhost:8080/api/recepteurs/";
                     RestTemplate restTemplate = new RestTemplate();
                     restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
                     Recepteur[ ] recepteurs = restTemplate.getForObject(apiUrl, Recepteur[].class);

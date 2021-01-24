@@ -42,7 +42,7 @@ public class EnvoiActivity extends AppCompatActivity {
         protected Envoi[] doInBackground(Void... params) {
 
             try {
-                String apiUrl = "";
+                String apiUrl = "http://localhost:8080/api/envois/";
                 RestTemplate restTemplate = new RestTemplate();
                 restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
                 Envoi[ ] envois = restTemplate.getForObject(apiUrl, Envoi[].class);
